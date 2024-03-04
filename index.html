@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>Encriptador de texto</title>
 </head>
 <body>
     <h1> Encriptador de Texto</h1>
     
-    <input id="texto-ingresar" class="box-texto" text="Texto"  placeholder="Ingrese su Texto a encriptar">
-
-    <input id="texto-egresar" class="box-texto" text="texto" placeholder="Aca se muestra su texto encriptado">
-
-    <button id="encriptar">Encriptar</button>
-    <button id="desencriptar">Desencriptar</button>
+    <textarea id="texto-ingresar" class="box-texto" text="Texto" oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/,'')" placeholder="Ingrese su Texto a encriptar"></textarea>
+    <button id="encriptar" onclick="btnEncriptar()">Encriptar</button> 
+    <button id="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+    <textarea readonly id="texto-egresar" class="box-texto2" text="texto" placeholder="Aca se muestra su Resultado"></textarea>
+    <button id="copiar" onclick="copiarContenido()">Copiar Texto</button>
+    
+    
+    <script src="script.js"></script>
 
 </body>
+<footer>
+    Desarrollado por Julio Alcaíno Garrido
+</footer>
 </html>

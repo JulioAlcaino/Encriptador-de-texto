@@ -1,0 +1,74 @@
+*{
+    background: rgb(185, 227, 240);
+    font-family:'Lucida Sans';
+    font-style: normal;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+
+
+
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-style: oblique;
+    margin-top: 1em;
+}
+
+body{
+    display: grid;
+}
+
+.box-texto , .box-texto2{
+    display: block;
+    margin: 20px AUTO;
+    width: 60%;
+    height: 6em;
+    border-radius: 10em;
+    text-transform: lowercase;
+    text-align: center;
+    padding-top: 6em;
+    background-color: rgba(252, 171, 71, 0.335);
+    resize: none;
+    font-size: large;
+    
+        
+}
+::placeholder {
+    color: rgba(4, 4, 171, 0.665);
+    text-transform: none;
+    text-align: center;
+    font-size: large;
+
+}
+
+button{
+    display: block;
+    margin: 20px auto;
+    width: 20em;
+    height: 3em;
+    border-radius: 10px;
+    
+}
+
+#encriptar{
+    background-color: rgb(1, 55, 248);
+    color: aliceblue;
+}
+
+#desencriptar{
+    background-color: chartreuse;
+
+}
+
+#copiar{
+    background-color: chocolate;
+}
+footer{
+    margin: auto;
+          
+}
